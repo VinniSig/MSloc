@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - MonteSanto Locações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/jpeg" href="images/Ms Locações Logo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>MS Locações</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-overlay"></div>
+        <div class="container banner-content">
+            <div class="banner-text">
+                <h1>
+                    <span class="destaque">Contato</span>
+                    <span class="subtitulo">Estamos à sua disposição</span>
+                </h1>
+                <p>Entre em contato conosco para solicitar um orçamento ou tirar suas dúvidas</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section class="contato-info">
+                <h2>Informações de Contato</h2>
+                <div class="contato-grid">
+                    <div class="contato-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Telefone</h3>
+                        <p>(21) 97509-4114</p>
+                    </div>
+                    
+                    <div class="contato-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/5521975094114" target="_blank" class="whatsapp-link">
+                            (21) 97509-4114
+                            <span class="whatsapp-texto">Clique para iniciar uma conversa</span>
+                        </a></p>
+                    </div>
+
+                    <div class="contato-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>E-mail</h3>
+                        <p><a href="mailto:mslocacoes08@gmail.com">mslocacoes08@gmail.com</a></p>
+                    </div>
+
+                    <div class="contato-item">
+                        <i class="fab fa-instagram"></i>
+                        <h3>Instagram</h3>
+                        <p><a href="https://www.instagram.com/monts_locacoes/" target="_blank">@montesantolocacoes</a></p>
+                    </div>
+
+
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MonteSanto Locações. Todos os direitos reservados.</p>
+            <div class="footer-contato">
+                <p>Telefone: (21) 97509-4114</p>
+            </div>
+            <div class="footer-contato">
+                <p>Email: mslocacoes08@gmail.com</p>
+            </div>
+            <div class="footer-contato">
+                <p>Instagram: @montesantolocacoes</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const accessKey = 'GTR11I9wHNS9hBKaAtxoW30UEqv_KMvrH1eRqFAG7r8';
+        const query = 'construction office';
+        const count = 1;
+
+        fetch(`https://api.unsplash.com/photos/random?client_id=${accessKey}&query=${query}&count=${count}`)
+            .then(response => response.json())
+            .then(data => {
+                // Definir imagem de fundo do banner
+                document.querySelector('.banner').style.backgroundImage = `url(${data[0].urls.regular})`;
+
+                // Adicionar atribuição do Unsplash
+                const attribution = document.createElement('div');
+                attribution.className = 'unsplash-attribution';
+                attribution.innerHTML = `
+                    Foto por 
+                    <a href="https://unsplash.com/@${data[0].user.username}?utm_source=montesanto_locacoes&utm_medium=referral">${data[0].user.name}</a> 
+                    no <a href="https://unsplash.com/?utm_source=montesanto_locacoes&utm_medium=referral">Unsplash</a>
+                `;
+                document.querySelector('.banner').appendChild(attribution);
+            })
+            .catch(error => console.log('Erro ao carregar imagem:', error));
+
+        // Adicionar após os scripts existentes
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verifica se o usuário veio de uma página de máquina
+            if (sessionStorage.getItem('fromMachine') === 'true') {
+                // Remove o flag
+                sessionStorage.removeItem('fromMachine');
+                // Rola suavemente até o formulário de contato
+                document.querySelector('.contato-info').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    </script>
+</body>
+</html>

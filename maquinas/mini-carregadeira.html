@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Carregadeiras - MonteSanto Locações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/jpeg" href="../images/Ms Locações Logo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>MonteSanto Locações</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#sobre">Sobre</a></li>
+                    <li><a href="../index.html#maquinas">Máquinas</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-overlay"></div>
+        <div class="container banner-content">
+            <div class="banner-text">
+                <h1>
+                    <span class="destaque">Mini Carregadeiras</span>
+                    <span class="subtitulo">Eficiência em espaços reduzidos</span>
+                </h1>
+                <p>Soluções versáteis para sua obra</p>
+                <a href="#maquinas-container" class="btn-banner">Ver Modelos</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section id="maquinas-container" class="maquinas-container">
+                <h2>Mini Carregadeiras</h2>
+                
+                <div class="maquinas-grid">
+                    <!-- Case SR175 -->
+                    <div class="maquina-card">
+                        <div class="maquina-header">
+                            <h3>Case SR130</h3>
+                            <span class="marca-tag">CASE</span>
+                        </div>
+                        
+                        <div class="maquina-galeria">
+                            <div class="maquina-imagem-principal">
+                                <img src="../images/case-sr175-1.jpg" alt="Case SR130" id="caseSR130Principal">
+                            </div>
+                            <div class="maquina-miniaturas">
+                                <img src="../images/case-sr175-1.jpg" alt="Case SR130 1" onclick="trocarImagem('caseSR130', this.src)">
+                                <img src="../images/case-sr175-2.jpg" alt="Case SR130 2" onclick="trocarImagem('caseSR130', this.src)">
+                                <img src="../images/case-sr175-3.jpg" alt="Case SR130 3" onclick="trocarImagem('caseSR130', this.src)">
+                            </div>
+                        </div>
+
+                        <div class="maquina-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-weight"></i>
+                                <span>Capacidade operacional</span>
+                                <strong>790 kg</strong>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-horse-head"></i>
+                                <span>Potência do motor</span>
+                                <strong>67 HP</strong>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-arrows-alt-v"></i>
+                                <span>Altura de descarga</span>
+                                <strong>2,31 metros</strong>
+                            </div>
+                        </div>
+
+                        <a href="../contato.html" class="btn-orcamento">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+
+                    <!-- New Holland L220 -->
+                    <div class="maquina-card">
+                        <div class="maquina-header">
+                            <h3>New Holland L220</h3>
+                            <span class="marca-tag">NEW HOLLAND</span>
+                        </div>
+                        
+                        <div class="maquina-galeria">
+                            <div class="maquina-imagem-principal">
+                                <img src="../images/new-holland-l220-1.jpg" alt="New Holland L220" id="newHollandL220Principal">
+                            </div>
+                            <div class="maquina-miniaturas">
+                                <img src="../images/new-holland-l220-1.jpg" alt="New Holland L220 1" onclick="trocarImagem('newHollandL220', this.src)">
+                                <img src="../images/new-holland-l220-2.jpg" alt="New Holland L220 2" onclick="trocarImagem('newHollandL220', this.src)">
+                                <img src="../images/new-holland-l220-3.jpg" alt="New Holland L220 3" onclick="trocarImagem('newHollandL220', this.src)">
+                            </div>
+                        </div>
+
+                        <div class="maquina-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-weight"></i>
+                                <span>Capacidade operacional</span>
+                                <strong>998 kg</strong>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-horse-head"></i>
+                                <span>Potência do motor</span>
+                                <strong>75 HP</strong>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-arrows-alt-v"></i>
+                                <span>Altura de descarga</span>
+                                <strong>2,45 metros</strong>
+                            </div>
+                        </div>
+
+                        <a href="../contato.html" class="btn-orcamento">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+
+                    <!-- Vectra Heman 175 -->
+                    <div class="maquina-card">
+                        <div class="maquina-header">
+                            <h3>Vectra Heman 175</h3>
+                            <span class="marca-tag">VECTRA</span>
+                        </div>
+                        
+                        <div class="maquina-galeria">
+                            <div class="maquina-imagem-principal">
+                                <img src="../images/vectra-heman-175-1.jpg" alt="Vectra Heman 175" id="vectraHeman175Principal">
+                            </div>
+                            <div class="maquina-miniaturas">
+                                <img src="../images/vectra-heman-175-1.jpg" alt="Vectra Heman 175 1" onclick="trocarImagem('vectraHeman175', this.src)">
+                                <img src="../images/vectra-heman-175-2.jpg" alt="Vectra Heman 175 2" onclick="trocarImagem('vectraHeman175', this.src)">
+                                <img src="../images/vectra-heman-175-3.jpg" alt="Vectra Heman 175 3" onclick="trocarImagem('vectraHeman175', this.src)">
+                            </div>
+                        </div>
+
+                        <div class="maquina-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-weight"></i>
+                                <span>Capacidade operacional</span>
+                                <strong>794 kg</strong>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-horse-head"></i>
+                                <span>Potência do motor</span>
+                                <strong>69 HP</strong>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-arrows-alt-v"></i>
+                                <span>Altura de descarga</span>
+                                <strong>2,33 metros</strong>
+                            </div>
+                        </div>
+
+                        <a href="../contato.html" class="btn-orcamento">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MonteSanto Locações. Todos os direitos reservados.</p>
+            <div class="footer-contato">
+                <p>Telefone: (21) 99914-5211</p>
+                <p>Endereço: Av. Miguel Antônio Fernandes, 1375, Rio de Janeiro - RJ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Função para trocar imagem (já existente)
+        function trocarImagem(id, src) {
+            document.getElementById(id + 'Principal').src = src;
+        }
+
+        const accessKey = 'GTR11I9wHNS9hBKaAtxoW30UEqv_KMvrH1eRqFAG7r8';
+        const query = 'mini loader construction';
+        const count = 1;
+
+        fetch(`https://api.unsplash.com/photos/random?client_id=${accessKey}&query=${query}&count=${count}`)
+            .then(response => response.json())
+            .then(data => {
+                // Definir imagem de fundo do banner
+                document.querySelector('.banner').style.backgroundImage = `url(${data[0].urls.regular})`;
+
+                // Adicionar atribuição do Unsplash
+                const attribution = document.createElement('div');
+                attribution.className = 'unsplash-attribution';
+                attribution.innerHTML = `
+                    Foto por 
+                    <a href="https://unsplash.com/@${data[0].user.username}?utm_source=montesanto_locacoes&utm_medium=referral">${data[0].user.name}</a> 
+                    no <a href="https://unsplash.com/?utm_source=montesanto_locacoes&utm_medium=referral">Unsplash</a>
+                `;
+                document.querySelector('.banner').appendChild(attribution);
+            })
+            .catch(error => console.log('Erro ao carregar imagem:', error));
+
+        // Adicionar após os scripts existentes
+        document.querySelectorAll('.btn-maquina').forEach(button => {
+            button.addEventListener('click', function(e) {
+                // Armazenar na sessionStorage que o usuário veio de uma página de máquina
+                sessionStorage.setItem('fromMachine', 'true');
+                // Continua com o redirecionamento normal
+            });
+        });
+    </script>
+</body>
+</html>

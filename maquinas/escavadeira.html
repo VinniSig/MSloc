@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escavadeiras - MonteSanto Locações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/jpeg" href="../images/Ms Locações Logo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>MonteSanto Locações</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#sobre">Sobre</a></li>
+                    <li><a href="../index.html#maquinas">Máquinas</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-overlay"></div>
+        <div class="container banner-content">
+            <div class="banner-text">
+                <h1>
+                    <span class="destaque">Escavadeiras</span>
+                    <span class="subtitulo">Potência e precisão em grandes projetos</span>
+                </h1>
+                <p>Soluções robustas para escavações e movimentação de terra</p>
+                <a href="#maquinas-container" class="btn-banner">Ver Modelos</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section id="maquinas-container" class="maquinas-container">
+                <h2>Escavadeiras</h2>
+                
+                <div class="maquinas-grid">
+                    <!-- CAT 320D -->
+                    <div class="maquina-card">
+                        <div class="maquina-header">
+                            <h3>CAT 320D</h3>
+                            <span class="marca-tag">CATERPILLAR</span>
+                        </div>
+                        
+                        <div class="maquina-galeria">
+                            <div class="maquina-imagem-principal">
+                                <img src="../images/cat-320d-1.jpg" alt="CAT 320D" id="cat320dPrincipal">
+                            </div>
+                            <div class="maquina-miniaturas">
+                                <img src="../images/cat-320d-1.jpg" alt="CAT 320D 1" onclick="trocarImagem('cat320d', this.src)">
+                                <img src="../images/cat-320d-2.jpg" alt="CAT 320D 2" onclick="trocarImagem('cat320d', this.src)">
+                                <img src="../images/cat-320d-3.jpg" alt="CAT 320D 3" onclick="trocarImagem('cat320d', this.src)">
+                            </div>
+                        </div>
+
+                        <div class="maquina-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-weight"></i>
+                                <span>Peso Operacional</span>
+                                <strong>20.100 kg</strong>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-horse-head"></i>
+                                <span>Potência do motor</span>
+                                <strong>138 HP</strong>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-arrows-alt-v"></i>
+                                <span>Profundidade de escavação</span>
+                                <strong>6,72 metros</strong>
+                            </div>
+                        </div>
+
+                        <a href="../contato.html" class="btn-orcamento">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MonteSanto Locações. Todos os direitos reservados.</p>
+            <div class="footer-contato">
+                <p>Telefone: (21) 99914-5211</p>
+                <p>Endereço: Av. Miguel Antônio Fernandes, 1375, Rio de Janeiro - RJ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function trocarImagem(modelo, src) {
+            document.getElementById(modelo + 'Principal').src = src;
+        }
+    </script>
+
+    <script>
+        const accessKey = 'GTR11I9wHNS9hBKaAtxoW30UEqv_KMvrH1eRqFAG7r8';
+        const query = 'excavator construction';
+        const count = 1;
+
+        fetch(`https://api.unsplash.com/photos/random?client_id=${accessKey}&query=${query}&count=${count}`)
+            .then(response => response.json())
+            .then(data => {
+                // Definir imagem de fundo do banner
+                document.querySelector('.banner').style.backgroundImage = `url(${data[0].urls.regular})`;
+
+                // Adicionar atribuição do Unsplash
+                const attribution = document.createElement('div');
+                attribution.className = 'unsplash-attribution';
+                attribution.innerHTML = `
+                    Foto por 
+                    <a href="https://unsplash.com/@${data[0].user.username}?utm_source=montesanto_locacoes&utm_medium=referral">${data[0].user.name}</a> 
+                    no <a href="https://unsplash.com/?utm_source=montesanto_locacoes&utm_medium=referral">Unsplash</a>
+                `;
+                document.querySelector('.banner').appendChild(attribution);
+            })
+            .catch(error => console.log('Erro ao carregar imagem:', error));
+    </script>
+
+    <script>
+        document.querySelectorAll('.btn-orcamento').forEach(button => {
+            button.addEventListener('click', function(e) {
+                // Armazenar na sessionStorage que o usuário veio de uma página de máquina
+                sessionStorage.setItem('fromMachine', 'true');
+                // Continua com o redirecionamento normal
+            });
+        });
+    </script>
+</body>
+</html>

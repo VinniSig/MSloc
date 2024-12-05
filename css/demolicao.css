@@ -1,0 +1,371 @@
+/* Estilos para a seção de serviços */
+.servicos-demolicao {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.servicos-demolicao h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.servico-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.servico-imagem {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    position: relative;
+}
+
+.servico-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.servico-conteudo {
+    padding: 1rem 0;
+}
+
+.servico-conteudo h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    color: #FFB700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.servico-conteudo p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.servico-conteudo ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.servico-conteudo ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.servico-conteudo ul li i {
+    color: #FFB700;
+    margin-right: 1rem;
+    font-size: 1.2em;
+}
+
+.servico-destaques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f5f5f5;
+    border-left: 4px solid #FFB700;
+}
+
+.destaque i {
+    color: #FFB700;
+    font-size: 1.5em;
+}
+
+.destaque span {
+    font-size: 1.1em;
+    color: #666;
+    font-weight: 500;
+}
+
+/* CTA Section */
+.servicos-cta {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 3rem;
+    background: #f5f5f5;
+}
+
+.servicos-cta h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.servicos-cta p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.btn-whatsapp,
+.btn-contato {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp {
+    background: #FFB700;
+    color: #fff;
+}
+
+.btn-whatsapp:hover {
+    background: #FFA500;
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+.btn-contato {
+    background: #fff;
+    color: #666;
+    border: 2px solid #666;
+}
+
+.btn-contato:hover {
+    background: #666;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .servico-item {
+        grid-template-columns: 1fr;
+    }
+
+    .servico-imagem {
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos-demolicao h2 {
+        font-size: 2em;
+    }
+
+    .servico-conteudo h3 {
+        font-size: 1.8em;
+    }
+
+    .servico-destaques {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .btn-whatsapp,
+    .btn-contato {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Seção Informativa */
+.servico-info {
+    padding: 5rem 0;
+    background-color: #f5f5f5;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.info-texto h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.info-texto p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.info-texto h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8em;
+    color: #FFB700;
+    text-transform: uppercase;
+    margin: 2rem 0 1.5rem;
+}
+
+.beneficios-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.beneficios-lista li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.beneficios-lista li i {
+    color: #FFB700;
+    margin-right: 1rem;
+    font-size: 1.2em;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.info-card {
+    background: #fff;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-top: 4px solid #FFB700;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card i {
+    font-size: 2.5em;
+    color: #FFB700;
+    margin-bottom: 1rem;
+}
+
+.info-card h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.info-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+}
+
+.info-cta {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 3rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.info-cta h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.info-cta p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Responsividade da seção informativa */
+@media (max-width: 992px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .info-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .servico-info {
+        padding: 3rem 0;
+    }
+
+    .info-texto h2 {
+        font-size: 2em;
+    }
+
+    .info-texto h3 {
+        font-size: 1.6em;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        padding: 1.5rem;
+    }
+
+    .info-cta {
+        padding: 2rem;
+    }
+
+    .info-cta h3 {
+        font-size: 1.8em;
+    }
+} 

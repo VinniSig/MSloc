@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Máquinas - MonteSanto Locações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/catalogo.css">
+    <link rel="icon" type="image/jpeg" href="images/MsLocaçõesLogo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>MS Locações</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#sobre">Sobre</a></li>
+                    <li><a href="../index.html#maquinas">Serviços</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-overlay"></div>
+        <div class="container banner-content">
+            <div class="banner-text">
+                <h1>
+                    <span class="destaque">Aluguel de Máquinas</span>
+                    <span class="subtitulo">Soluções completas para sua obra</span>
+                </h1>
+                <p>Equipamentos modernos, manutenção inclusa e suporte técnico especializado</p>
+                <div class="banner-buttons">
+                    <a href="#catalogo-maquinas" class="btn-banner btn-banner-outline">Ver Catálogo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Seção Informativa -->
+        <section class="servico-info">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-texto">
+                        <h2>Aluguel de Máquinas</h2>
+                        <p>A MonteSanto Locações oferece soluções completas em locação de equipamentos para construção civil, com uma frota moderna e diversificada para atender às suas necessidades.</p>
+                        
+                        <h3>Por que alugar conosco?</h3>
+                        <ul class="beneficios-lista">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Equipamentos modernos e bem mantidos</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Manutenção preventiva e corretiva inclusa</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Suporte técnico especializado</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Entrega e retirada no local da obra</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Atendimento 24 horas para emergências</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-tools"></i>
+                            <h4>Manutenção Inclusa</h4>
+                            <p>Todas as manutenções preventivas e corretivas são inclusas no valor do aluguel</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-truck"></i>
+                            <h4>Entrega e Retirada</h4>
+                            <p>Realizamos a entrega e retirada dos equipamentos em sua obra</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-headset"></i>
+                            <h4>Suporte Técnico</h4>
+                            <p>Equipe técnica especializada disponível para auxiliar durante toda a locação</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-cta">
+                    <h3>Precisa de um equipamento?</h3>
+                    <p>Entre em contato conosco e solicite um orçamento personalizado</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/5521999145211" class="btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+                        </a>
+                        <a href="../contato.html" class="btn-contato">Fale Conosco</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="catalogo-maquinas" class="catalogo-maquinas">
+                <h2>Catálogo de Máquinas</h2>
+                
+                <div class="catalogo-container">
+                    <!-- Menu de Categorias -->
+                    <div class="categorias-menu">
+                        <h3>Categorias</h3>
+                        <ul>
+                            <li><button class="categoria-link active" data-categoria="manipuladores">Manipuladores Telescópicos</button></li>
+                            <li><button class="categoria-link" data-categoria="escavadeiras">Mini Escavadeiras</button></li>
+                            <li><button class="categoria-link" data-categoria="carregadeiras">Mini Carregadeiras</button></li>
+                            <li><button class="categoria-link" data-categoria="retroescavadeiras">Retroescavadeiras</button></li>
+                        </ul>
+                    </div>
+
+                    <!-- Área de Exibição das Máquinas -->
+                    <div class="maquinas-container">
+                        <!-- Manipuladores Telescópicos -->
+                        <section id="manipuladores" class="categoria-section active">
+                            <h3>Manipuladores Telescópicos</h3>
+                            <div class="maquinas-grid">
+                                <!-- New Holland LM1745 -->
+                                <div class="maquina-card">
+                                    <img src="../images/new-holland-lm-1745.webp" alt="Mini Carregadeira New Holland L220" class="maquina-imagem">
+                                    <div class="maquina-info">
+                                        <div class="maquina-header">
+                                            <h3>New Holland LM1745</h3>
+                                            <span class="marca-tag">New Holland</span>
+                                        </div>
+                                        <div class="maquina-specs">
+                                            <div class="spec-item">
+                                                <i class="fas fa-weight"></i>
+                                                <span>Peso Operacional</span>
+                                                <strong>4.500 kg</strong>
+                                            </div>
+                                            <div class="spec-item">
+                                                <i class="fas fa-tachometer-alt"></i>
+                                                <span>Potência</span>
+                                                <strong>75 hp</strong>
+                                            </div>
+                                            <div class="spec-item">
+                                                <i class="fas fa-arrows-alt-v"></i>
+                                                <span>Capacidade</span>
+                                                <strong>4.500 kg</strong>
+                                            </div>
+                                            <div class="spec-item">
+                                                <i class="fas fa-compress-arrows-alt"></i>
+                                                <span>Altura Máxima</span>
+                                                <strong>17 m</strong>
+                                            </div>
+                                        </div>
+                                        <a href="../contato.html" class="btn-orcamento">Solicitar Orçamento</a>
+                                    </div>
+                                </div>
+                                <!-- Adicionar mais manipuladores aqui -->
+                            </div>
+                        </section>
+
+                        <!-- Mini Escavadeiras -->
+                        <section id="escavadeiras" class="categoria-section">
+                            <h3>Mini Escavadeiras</h3>
+                            <div class="maquinas-grid">
+                                <!-- Case CX37C -->
+                                <div class="maquina-card">
+                                    <img src="../images/retroescavadeira.png" alt="Mini Carregadeira Case 580N" class="maquina-imagem">
+                                    <div class="maquina-info">
+                                        <div class="maquina-header">
+                                            <h3>Case 580N</h3>
+                                            <span class="marca-tag">Case</span>
+                                        </div>
+                                        <div class="maquina-specs">
+                                            <div class="spec-item">
+                                                <i class="fas fa-weight"></i>
+                                                <span>Peso Operacional</span>
+                                                <strong>7.488 kg</strong>
+                                            </div>
+                                            <div class="spec-item">
+                                                <i class="fas fa-tachometer-alt"></i>
+                                                <span>Potência</span>
+                                                <strong>96 hp</strong>
+                                            </div>
+                                            <div class="spec-item">
+                                                <i class="fas fa-arrows-alt-v"></i>
+                                                <span>Capacidade</span>
+                                                <strong>3.086 kg</strong>
+                                            </div>
+                                            <!--
+                                            <div class="spec-item">
+                                                <i class="fas fa-compress-arrows-alt"></i>
+                                                <span>Altura Máxima</span>
+                                                <strong>3,3 m</strong>
+                                            </div>
+                                            -->
+                                        </div>
+                                        <a href="../contato.html" class="btn-orcamento">Solicitar Orçamento</a>
+                                    </div>
+                                </div>
+                                <!-- Adicionar mais mini escavadeiras aqui -->
+                            </div>
+                        </section>
+
+                        <!-- Mini Carregadeiras -->
+                        <section id="carregadeiras" class="categoria-section">
+                            <h3>Mini Carregadeiras</h3>
+                            <div class="maquinas-grid">
+                                <!-- Case SR175 -->
+                                <div class="maquina-card">
+                                    <img src="../images/SR175.png" alt="Mini Carregadeira Case SR175" class="maquina-imagem">
+                                    <div class="maquina-info">
+                                        <div class="maquina-header">
+                                            <h3>Case SR175</h3>
+                                            <span class="marca-tag">Case</span>
+                                        </div>
+                                        <div class="maquina-specs">
+                                            <div class="spec-item">
+                                                <i class="fas fa-weight"></i>
+                                                <span>Peso Operacional</span>
+                                                <strong>2.842 kg</strong>
+                                            </div>
+                                            <div class="spec-item">
+                                                <i class="fas fa-tachometer-alt"></i>
+                                                <span>Potência</span>
+                                                <strong>60 hp</strong>
+                                            </div>
+                                            <div class="spec-item">
+                                                <i class="fas fa-arrows-alt-v"></i>
+                                                <span>Capacidade</span>
+                                                <strong>1.588 kg</strong>
+                                            </div>
+                                            <div class="spec-item">
+                                                <i class="fas fa-compress-arrows-alt"></i>
+                                                <span>Altura Máxima</span>
+                                                <strong>4,12 m</strong>
+                                            </div>
+                                        </div>
+                                        <a href="../contato.html" class="btn-orcamento">Solicitar Orçamento</a>
+                                    </div>
+                                </div>
+                                <!-- Adicionar mais mini carregadeiras aqui -->
+<div class="maquina-card">
+    <img src="../images/New-Holland-L225.jpg" alt="Mini Carregadeira New Holland L220" class="maquina-imagem">
+    <div class="maquina-info">
+        <div class="maquina-header">
+            <h3>New Holland L220</h3>
+            <span class="marca-tag">New Holland</span>
+        </div>
+        <div class="maquina-specs">
+            <div class="spec-item">
+                <i class="fas fa-weight"></i>
+                <span>Peso Operacional</span>
+                <strong>2.935 kg</strong>
+            </div>
+            <div class="spec-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Potência</span>
+                <strong>57 hp</strong>
+            </div>
+            <div class="spec-item">
+                <i class="fas fa-arrows-alt-v"></i>
+                <span>Capacidade</span>
+                <strong>905 kg</strong>
+            </div>
+            <div class="spec-item">
+                <i class="fas fa-compress-arrows-alt"></i>
+                <span>Altura Máxima</span>
+                <strong>2.845 mm</strong>
+            </div>
+        </div>
+        <a href="../contato.html" class="btn-orcamento">Solicitar Orçamento</a>
+    </div>
+</div>
+
+<div class="maquina-card">
+    <img src="../images/vectra.webp" alt="Mini Carregadeira Vectra Heman 175" class="maquina-imagem">
+    <div class="maquina-info">
+        <div class="maquina-header">
+            <h3>Vectra Heman 175</h3>
+            <span class="marca-tag">Vectra</span>
+        </div>
+        <div class="maquina-specs">
+            <div class="spec-item">
+                <i class="fas fa-weight"></i>
+                <span>Peso Operacional</span>
+                <strong>2.990 kg</strong>
+            </div>
+            <div class="spec-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Potência</span>
+                <strong>74 hp</strong>
+            </div>
+            <div class="spec-item">
+                <i class="fas fa-arrows-alt-v"></i>
+                <span>Capacidade</span>
+                <strong>750 kg</strong>
+            </div>
+            <div class="spec-item">
+                <i class="fas fa-compress-arrows-alt"></i>
+                <span>Altura Máxima</span>
+                <strong>8-10 m</strong>
+            </div>
+        </div>
+        <a href="../contato.html" class="btn-orcamento">Solicitar Orçamento</a>
+    </div>
+</div>
+                            </div>
+                        </section>
+
+                        <!-- Retroescavadeiras -->
+                        <section id="retroescavadeiras" class="categoria-section">
+                            <h3>Escavadeiras</h3>
+                            <div class="maquinas-grid">
+                                <!-- Case 580N -->
+                                <div class="maquina-card">
+                                    <img src="../images/escavadeira-caterpillar.jpg" alt="Mini Carregadeira 320D" class="maquina-imagem">
+                                    <div class="maquina-info">
+                                        <div class="maquina-header">
+                                            <h3>320D</h3>
+                                            <span class="marca-tag">Caterpillar</span>
+                                        </div>
+                                        <div class="maquina-specs">
+                                            <div class="spec-item">
+                                                <i class="fas fa-weight"></i>
+                                                <span>Peso Operacional</span>
+                                                <strong>21.300 kg</strong>
+                                            </div>
+                                            <div class="spec-item">
+                                                <i class="fas fa-tachometer-alt"></i>
+                                                <span>Potência</span>
+                                                <strong>117 kW</strong>
+                                            </div>
+                                            <!--
+                                            <div class="spec-item">
+                                                <i class="fas fa-arrows-alt-v"></i>
+                                                <span>Capacidade</span>
+                                                <strong>1.000 kg</strong>
+                                            </div>
+                                            -->
+                                            <div class="spec-item">
+                                                <i class="fas fa-compress-arrows-alt"></i>
+                                                <span>Profundidade Máxima de Escavação</span>
+                                                <strong>6.720 mm</strong>
+                                            </div>
+                                        </div>
+                                        <a href="../contato.html" class="btn-orcamento">Solicitar Orçamento</a>
+                                    </div>
+                                </div>
+                                <!-- Adicionar mais retroescavadeiras aqui -->
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MonteSanto Locações. Todos os direitos reservados.</p>
+            <div class="footer-contato">
+                <div class="footer-contato">
+                    <p>Telefone: (21) 97509-4114</p>
+                </div>
+                <div class="footer-contato">
+                    <p>Email: mslocacoes08@gmail.com</p>
+                </div>
+                <div class="footer-contato">
+                    <p>Instagram: @montesantolocacoes</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const accessKey = 'GTR11I9wHNS9hBKaAtxoW30UEqv_KMvrH1eRqFAG7r8';
+        const query = 'construction office';
+        const count = 1;
+
+        fetch(`https://api.unsplash.com/photos/random?client_id=${accessKey}&query=${query}&count=${count}`)
+            .then(response => response.json())
+            .then(data => {
+                // Definir imagem de fundo do banner
+                document.querySelector('.banner').style.backgroundImage = `url(${data[0].urls.regular})`;
+
+                // Adicionar atribuição do Unsplash
+                const attribution = document.createElement('div');
+                attribution.className = 'unsplash-attribution';
+                attribution.innerHTML = `
+                    Foto por 
+                    <a href="https://unsplash.com/@${data[0].user.username}?utm_source=montesanto_locacoes&utm_medium=referral">${data[0].user.name}</a> 
+                    no <a href="https://unsplash.com/?utm_source=montesanto_locacoes&utm_medium=referral">Unsplash</a>
+                `;
+                document.querySelector('.banner').appendChild(attribution);
+            })
+            .catch(error => console.log('Erro ao carregar imagem:', error));
+
+        // Adicionar após os scripts existentes
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verifica se o usuário veio de uma página de máquina
+            if (sessionStorage.getItem('fromMachine') === 'true') {
+                // Remove o flag
+                sessionStorage.removeItem('fromMachine');
+                // Rola suavemente até o formulário de contato
+                document.querySelector('.contato-info').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+
+        // Script para navegação das categorias
+        document.querySelectorAll('.categoria-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove classe active de todos os links
+                document.querySelectorAll('.categoria-link').forEach(l => {
+                    l.classList.remove('active');
+                });
+                
+                // Adiciona classe active ao link clicado
+                this.classList.add('active');
+                
+                // Scroll suave até a categoria
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Seleciona todos os botões de categoria
+            const categoriaBtns = document.querySelectorAll('.categoria-link');
+            
+            // Adiciona evento de clique para cada botão
+            categoriaBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove a classe active de todos os botões
+                    categoriaBtns.forEach(b => b.classList.remove('active'));
+                    
+                    // Adiciona a classe active ao botão clicado
+                    this.classList.add('active');
+                    
+                    // Obtém a categoria do atributo data-categoria
+                    const categoria = this.getAttribute('data-categoria');
+                    
+                    // Esconde todas as seções
+                    document.querySelectorAll('.categoria-section').forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    
+                    // Mostra a seção da categoria selecionada
+                    const secaoAtiva = document.getElementById(categoria);
+                    secaoAtiva.classList.add('active');
+                    
+                    // Animação suave de fade in
+                    setTimeout(() => {
+                        secaoAtiva.style.opacity = '1';
+                    }, 50);
+                });
+            });
+        });
+
+        // Função para mostrar categoria específica (útil para links diretos)
+        function mostrarCategoria(categoriaId) {
+            const btn = document.querySelector(`[data-categoria="${categoriaId}"]`);
+            if (btn) {
+                btn.click();
+            }
+        }
+
+        // Verifica se há uma categoria na URL e mostra ela
+        window.addEventListener('load', function() {
+            const hash = window.location.hash.slice(1);
+            if (hash) {
+                mostrarCategoria(hash);
+            }
+        });
+
+        document.querySelector('.banner-buttons a[href="#catalogo-maquinas"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#catalogo-maquinas').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    </script>
+</body>
+</html>
